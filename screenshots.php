@@ -1,10 +1,10 @@
 <?php 
-  $uxid = rawurlencode("UXID");
+  include '/config/config.php';
 
   $ch = curl_init();
-  curl_setopt($ch, CURLOPT_URL,"https://xapi.us/v2/2533275001057958/screenshots");
+  curl_setopt($ch, CURLOPT_URL,"https://xapi.us/v2/{$uxid}/screenshots");
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-  curl_setopt($ch, CURLOPT_HTTPHEADER, ["X-Auth: API Key",]);
+  curl_setopt($ch, CURLOPT_HTTPHEADER, ["X-Auth:{$apikey}",]);
 
   $info = curl_exec($ch);
 
