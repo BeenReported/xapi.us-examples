@@ -1,5 +1,5 @@
 <?php 
-  include 'config/config.php';
+  include 'config.php';
 
   $ch = curl_init();
   curl_setopt($ch, CURLOPT_URL,"https://xapi.us/v2/{$uxid}/screenshots");
