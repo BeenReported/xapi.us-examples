@@ -14,7 +14,7 @@
   $clip = json_decode($info);
 
   foreach ($clip as $cur){
-      echo "<video id='br-xb-clips' controls preload='none' poster='";
+      echo "<video controls preload='none' poster='";
       echo $cur->thumbnails[0]->uri;
       echo "'> <source src='";
       echo $cur->gameClipUris[0]->uri;
