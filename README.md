@@ -1,4 +1,4 @@
-I've been learning PHP and making my own site for my Xbox videos and screenshots. You need to register at https://xapi.us in order to get your own UXID and API Key, it's completely free.
+I've been learning PHP and making my own site for my Xbox videos and screenshots. You need to register at https://xapi.us in order to get your own UXID and API Key, it's completely free. A fully working demo can be viewed at https://beenreported.tv.
 
 Edit config.php and replace both UXID and API Key with your own you got from xapi.us.
 
