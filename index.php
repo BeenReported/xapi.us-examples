@@ -1,3 +1,9 @@
+<!--
+
+Images served through xapi.us' profile API are not SSL so I've used weserv.nl as a image proxy in order to serve them
+on SLL websites. You can swap this for your own proxy or leave it as weserv.nl.
+
+-->
 <?php 
   include 'config.php';
 
@@ -12,8 +18,7 @@
 
   $clip = json_decode($info);
   
-  echo "<img src='";
-  echo $cur->displayPicRaw;
-  echo "'/>
-  echo $cur->modernGamertag;
+  echo "<img src='https://images.weserv.nl/?url=";
+  echo $clip->displayPicRaw;
+  echo "'>";
 ?>
